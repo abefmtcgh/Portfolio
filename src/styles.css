@@ -53,7 +53,7 @@ html, body{
     background: transparent;
     animation: spin 5s linear infinite;
 }
-
+/* remove comment if wanting to re add spin
 #logo:hover{
   animation-duration:1s;
 }
@@ -61,7 +61,7 @@ html, body{
 @keyframes spin{
   100% { transform: rotate(-360deg); }
 } 
-
+*/
 h1 {
      font-size: 90px;
      margin: 0;
@@ -156,7 +156,7 @@ hr {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255)
 
 }
 
