@@ -1,8 +1,16 @@
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
+document.getElementById("yv").addEventListener("click", function(){
+    document.getElementById("airhorn").play();
+});
 
-function toggleButton() {
-    navList.classList.toggle('show')
+
+
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }
-
-hamburgerButton.addEventListener('click', toggleButton)
