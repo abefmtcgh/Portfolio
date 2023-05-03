@@ -1,7 +1,21 @@
-document.getElementById("yv").addEventListener("click", function(){
-    document.getElementById("airhorn").play();
-});
 
+//
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "alopezosorio04@gmail.com",
+        Password : "Puringg5",
+        To : 'alopezosorio04@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone Number: " + docuement.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+    }).then(
+      message => alert("Message Sent Successfully")
+    );
+}
 
 
 //navbar script
